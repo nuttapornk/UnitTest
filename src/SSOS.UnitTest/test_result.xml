@@ -1,0 +1,93 @@
+<assemblies timestamp="07/16/2021 03:12:42">
+  <assembly name="E:\job\RAMA_Projects\SSOS\Src\SSOS\SSOS.UnitTest\bin\Debug\net5.0\SSOS.UnitTest.dll" run-date="2021-07-16" run-time="03:12:42" total="26" passed="26" failed="0" skipped="0" time="3.627" errors="0">
+    <errors />
+    <collection total="8" passed="8" failed="0" skipped="0" name="Test collection for SSOS.UnitTest.Api.CalendarApiTest" time="1.432">
+      <test name="ตรวจสอบวันหยุด(year: 2020, month: 4, date: &quot;2020-04-13&quot;, expectResult: True)" type="SSOS.UnitTest.Api.CalendarApiTest" method="IsHoliday" time="1.1876687" result="Pass">
+        <traits />
+      </test>
+      <test name="ตรวจสอบวันหยุด(year: 2020, month: 7, date: &quot;2020-07-06&quot;, expectResult: True)" type="SSOS.UnitTest.Api.CalendarApiTest" method="IsHoliday" time="0.0020533" result="Pass">
+        <traits />
+      </test>
+      <test name="ตรวจสอบวันหยุด(year: 2020, month: 4, date: &quot;2020-04-01&quot;, expectResult: False)" type="SSOS.UnitTest.Api.CalendarApiTest" method="IsHoliday" time="0.0029205" result="Pass">
+        <traits />
+      </test>
+      <test name="อ่านข้อมูลการลงตารางเวลาของPeer (year: 2021, month: 4, peerId: &quot;014419&quot;, expectResult: True)" type="SSOS.UnitTest.Api.CalendarApiTest" method="GetPeerBookings" time="0.1635059" result="Pass">
+        <traits />
+      </test>
+      <test name="อ่านข้อมูลการลงตารางเวลาของPeer (year: 2021, month: 10, peerId: &quot;014419&quot;, expectResult: False)" type="SSOS.UnitTest.Api.CalendarApiTest" method="GetPeerBookings" time="0.0015567" result="Pass">
+        <traits />
+      </test>
+      <test name="อ่านข้อมูลการลงตารางเวลาทั้งหมด (year: 2020, month: 4, expectResult: True)" type="SSOS.UnitTest.Api.CalendarApiTest" method="GetAllBookings" time="0.0701734" result="Pass">
+        <traits />
+      </test>
+      <test name="อ่านข้อมูลการลงตารางเวลาทั้งหมด (year: 2021, month: 10, expectResult: False)" type="SSOS.UnitTest.Api.CalendarApiTest" method="GetAllBookings" time="0.0017887" result="Pass">
+        <traits />
+      </test>
+      <test name="อ่านข้อมูลการลงตารางเวลาทั้งหมด (year: 2020, month: 6, expectResult: True)" type="SSOS.UnitTest.Api.CalendarApiTest" method="GetAllBookings" time="0.0022522" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for SSOS.UnitTest.Api.HrStaffProfileTest" time="1.441">
+      <test name="ทดสอบอ่านข้อมูล Personnel Profile กรณีไม่มีข้อมูล(id: &quot;014418&quot;)" type="SSOS.UnitTest.Api.HrStaffProfileTest" method="GetProfileEmpty" time="0.6718841" result="Pass">
+        <traits />
+      </test>
+      <test name="ทดสอบอ่านข้อมูล Personnel Profile กรณีไม่มีข้อมูล(id: &quot;014417&quot;)" type="SSOS.UnitTest.Api.HrStaffProfileTest" method="GetProfileEmpty" time="0.0895450" result="Pass">
+        <traits />
+      </test>
+      <test name="ทดสอบอ่านข้อมูล Personnel Profile มีข้อมูล(id: &quot;014419&quot;, personnelId: &quot;014419&quot;)" type="SSOS.UnitTest.Api.HrStaffProfileTest" method="GetProfile" time="0.4805151" result="Pass">
+        <traits />
+      </test>
+      <test name="ทดสอบอ่านข้อมูล Personnel Profile มีข้อมูล(id: &quot;009986&quot;, personnelId: &quot;009986&quot;)" type="SSOS.UnitTest.Api.HrStaffProfileTest" method="GetProfile" time="0.1995412" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for SSOS.UnitTest.Api.MeetingRemindApiTest" time="1.185">
+      <test name="ทดสอบ ส่งการแจ้งเตือนการเข้าพบ" type="SSOS.UnitTest.Api.MeetingRemindApiTest" method="SendNoti" time="1.1851046" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for SSOS.UnitTest.Api.TicketApiTest" time="1.212">
+      <test name="ทดสอบดึงข้อมูลเวลาการลงตารางเวลา(date: &quot;30/04/2564&quot;)" type="SSOS.UnitTest.Api.TicketApiTest" method="GetFreeBookingTime" time="1.1851799" result="Pass">
+        <traits />
+      </test>
+      <test name="ทดสอบดึงข้อมูลเวลาการลงตารางเวลา(date: &quot;20/04/2564&quot;)" type="SSOS.UnitTest.Api.TicketApiTest" method="GetFreeBookingTime" time="0.0039834" result="Pass">
+        <traits />
+      </test>
+      <test name="ทดสอบดึงข้อมูลวันที่การลงตารางเวลา" type="SSOS.UnitTest.Api.TicketApiTest" method="GetFreeBookingDate" time="0.0223546" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="10" passed="10" failed="0" skipped="0" name="Test collection for SSOS.UnitTest.CommonFunctionTest" time="1.723">
+      <test name="ทดสอบดึงข้อมูลบุคลากร คำนำหน้าชื่อ(personelId: &quot;002558&quot;, expectResult: &quot;ศ. พญ.&quot;)" type="SSOS.UnitTest.CommonFunctionTest" method="TestGetPersonelProfile" time="1.3264664" result="Pass">
+        <traits />
+      </test>
+      <test name="ทดสอบดึงข้อมูลบุคลากร คำนำหน้าชื่อ(personelId: &quot;014419&quot;, expectResult: &quot;นาย&quot;)" type="SSOS.UnitTest.CommonFunctionTest" method="TestGetPersonelProfile" time="0.1780445" result="Pass">
+        <traits />
+      </test>
+      <test name="Get num room" type="SSOS.UnitTest.CommonFunctionTest" method="TestGetNumRoom" time="0.0119566" result="Pass">
+        <traits />
+      </test>
+      <test name="Check format number(num: 189, format: &quot;0000&quot;, expectResult: &quot;0189&quot;)" type="SSOS.UnitTest.CommonFunctionTest" method="TestFormatDocNo" time="0.0007716" result="Pass">
+        <traits />
+      </test>
+      <test name="Check format number(num: 2, format: &quot;0000&quot;, expectResult: &quot;0002&quot;)" type="SSOS.UnitTest.CommonFunctionTest" method="TestFormatDocNo" time="0.0001161" result="Pass">
+        <traits />
+      </test>
+      <test name="ทดสอบดึงข้อมูลบุคลากร Email(personelId: &quot;014419&quot;, expectResult: &quot;nuttaporn.kun@mahidol.ac.th&quot;)" type="SSOS.UnitTest.CommonFunctionTest" method="TestGetPersonelEmail" time="0.1543707" result="Pass">
+        <traits />
+      </test>
+      <test name="ทดสอบการรวมข้อมูลระหว่างวันที่และเวลา(dateStr: &quot;01/01/2564&quot;, timeStr: &quot;08:00&quot;, expectResult: &quot;2021-01-01 08:00&quot;)" type="SSOS.UnitTest.CommonFunctionTest" method="TestCombindDateAndTime" time="0.0006105" result="Pass">
+        <traits />
+      </test>
+      <test name="ทดสอบการรวมข้อมูลระหว่างวันที่และเวลา(dateStr: &quot;28/02/2564&quot;, timeStr: &quot;23:59&quot;, expectResult: &quot;2021-02-28 23:59&quot;)" type="SSOS.UnitTest.CommonFunctionTest" method="TestCombindDateAndTime" time="0.0000900" result="Pass">
+        <traits />
+      </test>
+      <test name="ทดสอบการรวมข้อมูลระหว่างวันที่และเวลา(dateStr: &quot;15/01/2564&quot;, timeStr: &quot;12:30&quot;, expectResult: &quot;2021-01-15 12:30&quot;)" type="SSOS.UnitTest.CommonFunctionTest" method="TestCombindDateAndTime" time="0.0000557" result="Pass">
+        <traits />
+      </test>
+      <test name="ดึงข้อมูลแบบทดสอบ" type="SSOS.UnitTest.CommonFunctionTest" method="GetSurveyScaleSummary" time="0.0500932" result="Pass">
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>

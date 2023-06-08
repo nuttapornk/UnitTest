@@ -1,0 +1,105 @@
+<assemblies timestamp="01/06/2022 02:31:36">
+  <assembly name="E:\job\RAMA_Projects\MedicationMaster\src\MedMaster.UnitTest\bin\Debug\net5.0\MedMaster.UnitTest.dll" run-date="2022-01-06" run-time="02:31:36" total="30" passed="30" failed="0" skipped="0" time="5.619" errors="0">
+    <errors />
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for MedMaster.UnitTest.CommonTest" time="0.010">
+      <test name="MedMaster.UnitTest.CommonTest.Decimal2Digit(value: 12345.99345, expectResult: 12345.99)" type="MedMaster.UnitTest.CommonTest" method="Decimal2Digit" time="0.0059337" result="Pass">
+        <traits />
+      </test>
+      <test name="Get Material Tran(date: &quot;23.05.2021 00:00:00&quot;, time: &quot;12:05:39&quot;, expectResult: &quot;23.05.2021 12:05:39&quot;)" type="MedMaster.UnitTest.CommonTest" method="ConcatDateTime" time="0.0041467" result="Pass">
+        <traits />
+      </test>
+      <test name="MedMaster.UnitTest.CommonTest.FixDecimal(value: 123454, expectResult: &quot;123454.00&quot;)" type="MedMaster.UnitTest.CommonTest" method="FixDecimal" time="0.0001008" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="10" passed="10" failed="0" skipped="0" name="Test collection for MedMaster.UnitTest.CoSapTest" time="2.313">
+      <test name="Get Material data for HIS Outbound(matId: &quot;MONOLINE&quot;, plant: &quot;1200&quot;)" type="MedMaster.UnitTest.CoSapTest" method="Outbound" time="0.1970220" result="Pass">
+        <traits />
+      </test>
+      <test name="Get Material data for HIS Outbound(matId: &quot;AMOX-T-&quot;, plant: &quot;1200&quot;)" type="MedMaster.UnitTest.CoSapTest" method="Outbound" time="0.0147838" result="Pass">
+        <traits />
+      </test>
+      <test name="Get Material data for HIS Outbound(matId: &quot;BRIC-3-E&quot;, plant: &quot;1200&quot;)" type="MedMaster.UnitTest.CoSapTest" method="Outbound" time="0.0134291" result="Pass">
+        <traits />
+      </test>
+      <test name="Get Material data for HIS Outbound(matId: &quot;BUVE-3-E&quot;, plant: &quot;1200&quot;)" type="MedMaster.UnitTest.CoSapTest" method="Outbound" time="0.0162514" result="Pass">
+        <traits />
+      </test>
+      <test name="Test SAP Connection" type="MedMaster.UnitTest.CoSapTest" method="TestConnection" time="0.0509410" result="Pass">
+        <traits />
+      </test>
+      <test name="Get Material Tran(fdate: &quot;24.03.2021&quot;, tdate: &quot;24.03.2021&quot;)" type="MedMaster.UnitTest.CoSapTest" method="GetMatTran" time="0.0001729" result="Pass">
+        <traits />
+      </test>
+      <test name="Get Material Tran(fdate: &quot;23.05.2021&quot;, tdate: &quot;23.05.2021&quot;)" type="MedMaster.UnitTest.CoSapTest" method="GetMatTran" time="0.0000695" result="Pass">
+        <traits />
+      </test>
+      <test name="Inbound data to SAP(matId: &quot;AMOX&quot;, tmtCode: &quot;BB&quot;, specprep: &quot;BB&quot;, strength: &quot;BB&quot;, contain: &quot;BB&quot;)" type="MedMaster.UnitTest.CoSapTest" method="Inbound" time="1.1338711" result="Pass">
+        <traits />
+      </test>
+      <test name="Inbound data to SAP(matId: &quot;BRIC-3-E&quot;, tmtCode: &quot;AA&quot;, specprep: &quot;AA&quot;, strength: &quot;AA&quot;, contain: &quot;AA&quot;)" type="MedMaster.UnitTest.CoSapTest" method="Inbound" time="0.8763204" result="Pass">
+        <traits />
+      </test>
+      <test name="Test get sap environment" type="MedMaster.UnitTest.CoSapTest" method="GetEnvironment" time="0.0101490" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="8" passed="8" failed="0" skipped="0" name="Test collection for MedMaster.UnitTest.InboundHisTest" time="3.828">
+      <test name="Inbound material master data to inbound web api(sapCode: &quot;AMOX&quot;, tmtCode: &quot;TEST-1234&quot;, specPrep: &quot;&quot;, strength: &quot;&quot;, contain: &quot;&quot;, had: False, tradeName: &quot;&quot;, mims: &quot;&quot;, genst: &quot;&quot;, expectResult: True)" type="MedMaster.UnitTest.InboundHisTest" method="Inbound" time="1.5988043" result="Pass">
+        <traits />
+      </test>
+      <test name="Inbound material master data to inbound web api(sapCode: &quot;SEBM-L1&quot;, tmtCode: &quot;&quot;, specPrep: &quot;BB&quot;, strength: &quot;AA&quot;, contain: &quot;CC&quot;, had: False, tradeName: &quot;tradeName&quot;, mims: &quot;1A&quot;, genst: &quot;AA&quot;, expectResult: False)" type="MedMaster.UnitTest.InboundHisTest" method="Inbound" time="0.0320584" result="Pass">
+        <traits />
+      </test>
+      <test name="Inbound material master data to inbound web api(sapCode: &quot;MONOLINE&quot;, tmtCode: &quot;AA&quot;, specPrep: &quot;BB&quot;, strength: &quot;CC&quot;, contain: &quot;DD&quot;, had: False, tradeName: &quot;TName&quot;, mims: &quot;1H,1J,2B,2B&quot;, genst: &quot;AA,DD&quot;, expectResult: True)" type="MedMaster.UnitTest.InboundHisTest" method="Inbound" time="0.9831981" result="Pass">
+        <traits />
+      </test>
+      <test name="Inbound material master data to inbound web api(sapCode: &quot;AMOX1&quot;, tmtCode: &quot;CC&quot;, specPrep: &quot;cc&quot;, strength: &quot;AbbA&quot;, contain: &quot;CC&quot;, had: True, tradeName: &quot;tradeName&quot;, mims: &quot;1A,1B,2A,2B&quot;, genst: &quot;AA,NN,CC,DD&quot;, expectResult: True)" type="MedMaster.UnitTest.InboundHisTest" method="Inbound" time="1.0640070" result="Pass">
+        <traits />
+      </test>
+      <test name="Inbound material master data to inbound web api(sapCode: &quot;KALCID&quot;, tmtCode: &quot;&quot;, specPrep: &quot;&quot;, strength: &quot;&quot;, contain: &quot;&quot;, had: False, tradeName: &quot;&quot;, mims: &quot;&quot;, genst: &quot;&quot;, expectResult: True)" type="MedMaster.UnitTest.InboundHisTest" method="Inbound" time="0.0927901" result="Pass">
+        <traits />
+      </test>
+      <test name="Inbound material classification data(sapCode: &quot;XATX-T-&quot;, mims: &quot;1J,4H&quot;)" type="MedMaster.UnitTest.InboundHisTest" method="InboundMims" time="0.0266454" result="Pass">
+        <traits />
+      </test>
+      <test name="Inbound material classification data(sapCode: &quot;BBB-TEST&quot;, mims: &quot;&quot;)" type="MedMaster.UnitTest.InboundHisTest" method="InboundMims" time="0.0144461" result="Pass">
+        <traits />
+      </test>
+      <test name="Inbound material classification data(sapCode: &quot;AMOX&quot;, mims: &quot;1A,2A,1B,1C,3C&quot;)" type="MedMaster.UnitTest.InboundHisTest" method="InboundMims" time="0.0162024" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="7" passed="7" failed="0" skipped="0" name="Test collection for MedMaster.UnitTest.MaterialsTest" time="1.287">
+      <test name="Get Cost price material(sapCode: &quot;BBB-TEST&quot;, plant: &quot;1200&quot;)" type="MedMaster.UnitTest.MaterialsTest" method="GetCostPrice" time="1.0423142" result="Pass">
+        <traits />
+      </test>
+      <test name="Get Cost price material(sapCode: &quot;AMOX&quot;, plant: &quot;1200&quot;)" type="MedMaster.UnitTest.MaterialsTest" method="GetCostPrice" time="0.0307670" result="Pass">
+        <traits />
+      </test>
+      <test name="Test controller search materials with get(sapCode: &quot;&quot;, name: &quot;&quot;, matType: &quot;301&quot;, matGroup: &quot;&quot;, expectResult: True)" type="MedMaster.UnitTest.MaterialsTest" method="SearchMaterialsData" time="0.1446092" result="Pass">
+        <traits />
+      </test>
+      <test name="Test controller search materials with get(sapCode: &quot;&quot;, name: &quot;&quot;, matType: &quot;777&quot;, matGroup: &quot;&quot;, expectResult: False)" type="MedMaster.UnitTest.MaterialsTest" method="SearchMaterialsData" time="0.0035061" result="Pass">
+        <traits />
+      </test>
+      <test name="Test controller search materials with get(sapCode: &quot;amox&quot;, name: &quot;&quot;, matType: &quot;&quot;, matGroup: &quot;&quot;, expectResult: True)" type="MedMaster.UnitTest.MaterialsTest" method="SearchMaterialsData" time="0.0245187" result="Pass">
+        <traits />
+      </test>
+      <test name="Test controller search materials with get(sapCode: &quot;&quot;, name: &quot;&quot;, matType: &quot;201&quot;, matGroup: &quot;&quot;, expectResult: True)" type="MedMaster.UnitTest.MaterialsTest" method="SearchMaterialsData" time="0.0037919" result="Pass">
+        <traits />
+      </test>
+      <test name="Test controller search materials with post" type="MedMaster.UnitTest.MaterialsTest" method="GetMaterialsData" time="0.0374502" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for MedMaster.UnitTest.OutboundHisTest" time="1.650">
+      <test name="outbound material master data to mock HIS web api(fdate: &quot;05.01.2022&quot;, tdate: &quot;05.01.2022&quot;)" type="MedMaster.UnitTest.OutboundHisTest" method="Outbound" time="1.1242388" result="Pass">
+        <traits />
+      </test>
+      <test name="outbound material master data to mock HIS web api(fdate: &quot;04.01.2022&quot;, tdate: &quot;04.01.2022&quot;)" type="MedMaster.UnitTest.OutboundHisTest" method="Outbound" time="0.5256861" result="Pass">
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>

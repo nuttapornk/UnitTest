@@ -1,0 +1,9 @@
+{
+  "RamaStaffAuthen": {
+    "ApiUri": ""
+  },
+  "RamaSms": {
+    "SingleSendNowApiUri": "",
+    "MultiSendNowApiUri": ""
+  }
+}
